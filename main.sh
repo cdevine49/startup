@@ -11,7 +11,8 @@ uncomment_community_packages()
 uncomment_community_packages
 
 apk update
-apk add vim=8.2.0-r0
+apk add vim
+apk add git-perl
 
 # Switches the Escape and CapsLock keys
 
@@ -48,7 +49,7 @@ install_docker
 
 setup_zsh()
 {
-	apk add zsh=5.7.1-r0
+	apk add zsh
 	sed -i "s/\/bin\/ash/\/bin\/zsh/g" /etc/passwd
 }
 
